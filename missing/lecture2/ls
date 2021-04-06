@@ -1,0 +1,4 @@
+#!usr/bin/env bash
+# print out files (including hidden files) ordered by last modified with colors
+ls -altG
+
