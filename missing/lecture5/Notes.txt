@@ -1,0 +1,17 @@
+Command-line Environment
+
+The shell is using UNIX communication mechanism called a signal to communicate
+information to the process. When a process receives a sginal it stops its
+execution, deals with the signal and potentially  changes the flow of execution
+based on the information that the signal delivered. Signals are *software interrupts*.
+
+`Ctrl-C` delivers a `SIGINT` signal to the process.
+
+`SIGTERM` is a more generic signal asking a process to exit gracefully. We can
+do that by: `kill -TERM <PID>`
+
+`SIGSTOP`: pauses a process ~ `Ctrl-Z` will prompt the shell to send a `SIGTSTP`
+signal.
+
+We can the continue the paused job in the foreground or in the background
+using `fg` or `bg`, respectively.
